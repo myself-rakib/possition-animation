@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    width: 80%;
+    height: 700px;
+    margin-left: 164px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background: rgb(127, 225, 255);
+    position: relative;
+}
+h1{
+    font-size: 50px;
+    color: rgb(245, 245, 245);
+}
+.A{
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    animation: aaa 4s forwards;
+}
+
+.B{
+    position: absolute;
+    bottom: 0%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    animation: bbb 4s forwards;
+}
+
+@keyframes aaa{
+    from{
+        top: 25px;
+        left: 50px;
+    }
+    to{
+        top: 48%;
+    }
+}
+@keyframes bbb{
+    from{
+        bottom: 0%;
+        left: 90%;
+    }
+    to{
+        bottom: 43%;
+    }
+}
